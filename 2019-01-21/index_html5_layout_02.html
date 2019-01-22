@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		header{
+			background-color: blue;
+			color: white;
+			text-align: center;
+		}
+		nav{
+			width: 20%;
+			float: left;
+		}
+		nav ul{
+			list-style-type: none;
+			padding: 0;
+		}
+		article{
+			width: 70%;
+			float: left;
+		}
+
+		section:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		footer{
+			background-color: blue;
+			color: white;
+		}
+	</style>
+
+
+</head>
+<body>
+<!--
+	header 
+		Cities
+		문자열 크게
+		바탕색 blue
+		글자색 white
+
+	nav
+		1. London
+		2. Paris
+		3. Seoul
+		4. NewYork
+		머리글 보이지 않게
+		width : 20%
+
+	본문
+		런던에 대한 간단한 소개를 표시
+		nav와 본문은 가로 방향으로 배치
+		width : 70%
+	footer
+		본인의 email을 표시
+		바탕색 blue
+		글자색 white
+
+-->
+
+
+<header><h1>Cities</h1></header>
+<section>
+
+<nav>
+	<ul id = "none">
+		<li><a href="#">London</a></li>
+		<li><a href="#">Paris</a></li>
+		<li><a href="#">Seoul</a></li>
+		<li><a href="#">NewYork</a></li>
+	</ul>
+</nav>
+
+<article>
+	<h3>London</h3>
+	<p>***** 런던 소개하기******
+</article>
+</section>
+
+<footer>
+	CopyRight &copy; jeong8161@naver.com
+</footer>
+
+
+</body>
+</html>
