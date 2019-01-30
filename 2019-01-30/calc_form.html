@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewprot" content="width=divice-width, initial-scale=1"> <!-- 모바일 환경에서도 볼 수 있게 항상 설정해 주기 -->
+	<meta charset="utf-8">
+
+	<title></title>
+</head>
+<body>
+
+	<form>
+		<label for="t_num1">숫자1</label>
+		<input id="t_num1" input name="txt_num1"><br/> <!-- input 에 있는 name은 변수이다. 숫자 3을 입력받았을 때 txt_num1=3; 을 server에 전송한다는 뜻-->
+		<label for="t_num2">숫자2</label>
+
+		<input id="t_num2" input name="txt_num2"><br/> <!-- id는 HTML문서 내에서 구별할 수 있는 키(PK) -->
+		<button>확인</button>
+	</form>
+
+	<p>input box는 브라우저에서 어떤 문자열 등을 입력받아서 
+	<p>WEB App Server로 전송해서 어떤 처리를 하기 위한 도구
+	<p>Button은 input box에 값을 입력하고 마지막 WEB Server로 전송하라는 지시를 내리는 도구
+
+
+
+</body>
+</html>
+
+
+
+
+<!-- 
+	1. 메타 설정
+	2. label
+	3. label를 form 으로 감싸기
+
+
+	input에 있는 name은 변수 => 숫자3을 입력받았을 때 txt_num1=3 을 서버에 전송한다는 뜻
+	input에 있는 id => HTML 문서 내에서 구별 할 수 있는 키(PK)
+
+	input 다음에 <br /> 줄바꿈을 해주면 숫자2는 밑으로 보여진다.
+
+	label에 속성 넣기=><label for="t_num1"> 
+		숫자 1이라는 label은 t_num1를 위한 레이블 => 그룹으로 묶어진다.
+
+	label에 있는 for=> 글자 또는 박스를 둘 다 클릭 할 수 있다.
+
+-->
