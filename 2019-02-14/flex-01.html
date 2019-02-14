@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	.flex-container{
+		display:flex;
+		-ms-display:flex; /* window7의 Internet Explorer(11)에서 무너지는 현상이 발생했을 때 */
+			
+	}
+	.items{
+		height: 100px;
+		border:1px solid blue;
+		background-color: #aaa;
+		margin: 3px;
+
+		/* box 내부의 컨텐츠를 가로세로 중앙에 배치 */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		/* window7의 Internet Explorer(11)에서 무너지는 현상이 발생했을 때 */
+		-ms-display: flex;
+		-ms-align-items: center;
+		-ms-justify-content: center;
+	}
+
+	#item1{
+		/* graw, shrink basic 지정해서 가로 정렬 시키는 옵션*/
+		/*flex: 0 0 auto; */
+		flex: 1; /* positive num*/
+	}
+
+	#item2{
+		flex: 5;
+	}
+
+	#item3{
+		flex: 3;
+	}
+
+	#item4{
+		flex: 500px;
+		height: auto;
+	}
+
+	#item5{
+		flex: 300px;
+	}
+	#item6{
+		flex: 100px;
+	}
+	#subitem6{
+		background-color: yellow;
+	}
+
+</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div id="item1" class="items">1:1</div>
+		<div id="item2" class="items">2:5</div>
+		<div id="item3" class="items">3:3</div>
+	</div>
+
+	<div class="flex-container">
+		<div id="item4" class="items">
+			<p>adfqtn ahfjkdakjgbq tohrenadofnaofnioqnondjcnzk lvnlanglkqjtodjapfnqpdladfqtn adfqtn ahfjkdakjgbq tohrenadofnaofnioqnondjcnzk lvnlanglkqjtodjapfnqpdladfqtnadfqtn ahfjkdakjgbq tohrenadofnaofnioqnondjcnzk lvnlanglkqjtodjapfnqpdladfqtnadfqtn ahfjkdakjgbq tohrenadofnaofnioqnondjcnzk lvnlanglkqjtodjapfnqpdladfqtnadfqtn ahfjkdakjgbq tohrenadofnaofnioqnondjcnzk lvnlanglkqjtodjapfnqpdladfqtnadfqtn ahfjkdakjgbq tohrenadofnaofnioqnondjcnzk lvnlanglkqjtodjapfnqpdladfqtn</p> </div>
+		<div id="item5" class="items">5:5</div>
+		<div id="item6" class="items">
+			<div id="subitem6" >6:3</div>
+		</div>
+	</div>
+
+</body>
+</html>
